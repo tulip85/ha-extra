@@ -327,5 +327,6 @@ micro_wake_word:
     - voice_assistant.start:
         wake_word: !lambda return wake_word;
   vad:
+    model: github://esphome/micro-wake-word-models/models/v2/vad.json
   models:
-    - model: https://raw.githubusercontent.com/tulip85/ha-extra/refs/heads/main/blueberry.json
+    - model: github://tulip85/ha-extra/refs/heads/main/blueberry.json
