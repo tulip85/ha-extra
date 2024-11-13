@@ -327,6 +327,6 @@ micro_wake_word:
     - voice_assistant.start:
         wake_word: !lambda return wake_word;
   vad:
-    model: github://esphome/micro-wake-word-models/models/v2/vad.json
+    model: https://raw.githubusercontent.com/esphome/micro-wake-word-models/refs/heads/main/models/v2/vad.json
   models:
     - model: ${micro_wake_word_model}
