@@ -1,7 +1,7 @@
 substitutions:
   name: m5stack-atom-echo
   friendly_name: M5Stack Atom Echo
-  micro_wake_word_model: blueberry  # alexa, hey_jarvis, hey_mycroft are also supported
+  micro_wake_word_model: https://raw.githubusercontent.com/tulip85/ha-extra/refs/heads/main/blueberry.json  # alexa, hey_jarvis, hey_mycroft are also supported
 
 esphome:
   name: ${name}
@@ -329,4 +329,4 @@ micro_wake_word:
   vad:
     model: github://esphome/micro-wake-word-models/models/v2/vad.json
   models:
-    - model: github://tulip85/ha-extra/refs/heads/main/blueberry.json
+    - model: ${micro_wake_word_model}
